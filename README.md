@@ -1,7 +1,10 @@
-# automateit
+# README #
 
-Project status badge:
-[![Build status](https://ci.appveyor.com/api/projects/status/8g0571vsttp9tawr?svg=true)](https://ci.appveyor.com/project/FrameBassman/automateit)
+This project is fork of [automateit.dotnet](https://github.com/wsbaser/automateit.dotnet)
 
-_master_ branch status badge:
-[![Build status](https://ci.appveyor.com/api/projects/status/8g0571vsttp9tawr/branch/master?svg=true)](https://ci.appveyor.com/project/FrameBassman/automateit/branch/master)
+### CI Status ###
+
+Branch  | Badge
+--------| -------------
+master  | [![Build Status](https://travis-ci.com/FrameBassman/uitests.dotnet.svg?branch=master)](https://travis-ci.com/FrameBassman/uitests.dotnet)
+dev     | [![Build Status](https://travis-ci.com/FrameBassman/uitests.dotnet.svg?branch=dev)   ](https://travis-ci.com/FrameBassman/uitests.dotnet)

@@ -1,0 +1,27 @@
+jobs:
+  include:
+    - stage: Build
+      language: csharp
+      dist: xenial
+      mono: none
+      dotnet: 2.2
+      before_install:
+        - nvm install 11.13.0
+      install:
+        - dotnet clean
+        - dotnet restore
+        - dotnet build
+      script:
+        - dotnet test AutomateIt.Extensions.Tests
+        - dotnet test AutomateIt.Tests
+        - cd AwesomeApp/Client/
+        - npm install
+        - npx tsc --build tsconfig.json --verbose
+
+stages:
+  - Build
+branches:
+  only:
+    - /.*/
+notifications:
+  email: false
